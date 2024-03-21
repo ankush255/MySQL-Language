@@ -1,5 +1,6 @@
 use demo;
 
+
 create table salesman_master (
 	SalesmanNo varchar(6),
     SalesmanName varchar(20),

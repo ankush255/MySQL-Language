@@ -1,5 +1,6 @@
 use demo;
 
+
 create table products_master(
 	ProductNo varchar(6),
     Description varchar(15),
