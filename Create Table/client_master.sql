@@ -31,3 +31,13 @@ desc client_master;
 
 
 
++----------+----------------+----------+----------+-----------+---------+-------------+--------+
+| clientno | Name           | Address1 | Address2 | City      | Pincode | State       | Baldue |
++----------+----------------+----------+----------+-----------+---------+-------------+--------+
+| C00001   | Ivan Bayross   |          |          | Mumbai    |  400054 | Maharashtra |  15000 |
+| C00002   | Mamta Muzumdar | NULL     | NULL     | Madras    |  780001 | Tamil Nadu  |      0 |
+| C00003   | Chhaya Bankar  | NULL     | NULL     | Mumbai    |  400057 | Maharashtra |   5000 |
+| C00004   | Ashwini Joshi  | NULL     | NULL     | Bangalore |  560001 | Karnataka   |      0 |
+| C00005   | Hansel Colaco  | NULL     | NULL     | Mumbai    |  400060 | Maharashtra |   2000 |
+| C00006   | Deepak Sharma  | NULL     | NULL     | Mangalore |  560050 | Karnataka   |      0 |
++----------+----------------+----------+----------+-----------+---------+-------------+--------+
