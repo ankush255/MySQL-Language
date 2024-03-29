@@ -4,3 +4,5 @@
 
 
 use classicmodels;
+
+select * from customers where customerNumber not between 150 AND 200;
