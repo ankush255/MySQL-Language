@@ -43,3 +43,14 @@ select * from products_master;
 -- | P07975    | Lycra Tops   |             5 | Piece       |        70 |         30 |       300 |       175 |
 -- | P08865    | Skirts       |             5 | Piece       |        75 |         30 |       450 |       300 |
 -- +-----------+--------------+---------------+-------------+-----------+------------+-----------+-----------+
+
+
+
+-- cotprice 350 thi 450  not show 
+select * from products_master where CostPrice not between 350 and 450;
+
+
+
+
+-- cost price "Price"
+select CostPrice as 'Price' from products_master;

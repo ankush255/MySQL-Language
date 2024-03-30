@@ -41,3 +41,15 @@ desc client_master;
 -- | C00005   | Hansel Colaco  | NULL     | NULL     | Mumbai    |  400060 | Maharashtra |   2000 |
 -- | C00006   | Deepak Sharma  | NULL     | NULL     | Mangalore |  560050 | Karnataka   |      0 |
 -- +----------+----------------+----------+----------+-----------+---------+-------------+--------+
+
+
+
+-- c2 C5
+select * from client_master limit 4 offset 1;
+
+
+
+
+-- C Name 
+select * from client_master where Name like 'C%';
+
