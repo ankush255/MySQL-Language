@@ -3,5 +3,11 @@
 
 
 
-use demo;
+use classicmodels;
+select * from customers;
+
+
+SELECT COUNT(customerNumber), country FROM customers GROUP BY country HAVING COUNT(customerNumber) > 2;
+
+
 
