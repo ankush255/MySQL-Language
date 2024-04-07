@@ -1,47 +1,47 @@
+
 use demo;
 
--- table 1
+-- table 1 
 
-create table AKS (
-    empName varchar(10),
-    empID int(5),
-    empEmail varchar(20),
-    empWork varchar(20)
-)
-
-insert into AKS values('Mihir',1,'mihir10@gmail.com','Node JS'),
-('Darshan',2,'darshan12@gmail.com','python_Backend'),
-('Kishan',3,'kishan34@gmai.com','React JS'),
-('Suman',4,'suman21@gmail.com','UI/UX');
-
-
-select * from AKS;
-
-
-
-
--- table 2
-
-create table RMA (
-    stuName varchar(10),
-    stuID int(10),
-    stuSTD int(5),
-    stuTime int(10)
+CREATE TABLE STUDENTS(
+ID INT,
+NAME VARCHAR(20),
+BRANCH VARCHAR(20),
+NUMBER INT
 );
 
-insert into RMA values('Munno',1,12,7),
-('Chandu',2,12,7),
-('Magan',3,12,7),
-('Vishal',4,12,7),
-('Prakash',5,12,7),
-('Monu',6,12,7);
+INSERT INTO STUDENTS VALUES(1,'SURYANSH JOHARI','CS',984012);
+INSERT INTO STUDENTS VALUES(2,'AMAN SHARMA','IT',771346);
+INSERT INTO STUDENTS VALUES(3,'DEV VERMA','ME',638587);
+INSERT INTO STUDENTS VALUES(4,'JOY SMITH','CE',876691);
+INSERT INTO STUDENTS VALUES(5,'CHARLES GATTO','EE',997679);
 
-
-select * from RMA;
-
+select * from students;
 
 
 
--- Full Join
 
 
+-- table 2 
+
+CREATE TABLE LIBRARY(
+BOOK_ID INT,
+BOOK_NAME VARCHAR(20),
+ISSUED_ON DATE,
+DUE_DATE DATE
+);
+  
+INSERT INTO LIBRARY VALUES(1,'RD SHARMA','2023-01-01','2023-01-08');
+INSERT INTO LIBRARY VALUES(2,'GATE CRACKER','2023-02-02','2023-02-09');
+INSERT INTO LIBRARY VALUES(3,'MORRIS MANO','2023-03-03','2023-03-10');
+INSERT INTO LIBRARY VALUES(4,'NK PUBLICATIONS','2023-04-04','2023-04-11');
+INSERT INTO LIBRARY VALUES(5,'BIG BANG THEORY','2023-05-05','2023-05-12');
+
+select * from Library;
+
+
+
+
+-- Full Join 
+
+SELECT ID,NAME,BOOK_ID,BOOK_NAME FROM STUDENTS FULL JOIN LIBRARY ON ID=BOOK_ID;
